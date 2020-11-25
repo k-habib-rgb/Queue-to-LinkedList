@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package recurrsion;
+import java.util.Scanner;
+/**
+ *
+ * @author Kinza Habib
+ */
+public class Recurrsion {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+     int Number;
+ Scanner kz = new Scanner(System.in);
+     System.out.println("Enter Decimal Number");
+     Number=kz.nextInt();
+ 
+   System.out.println("Decimal Number("+Number+") = Binary Number("+decimal_binary(Number)+")");
+ }
+ 
+ static int decimal_binary(int n)
+ {
+     if(n==0)
+         return 0;
+     else
+         return ((n%2)+10*decimal_binary(n/2));
+ }
+}
+    
+    
+
